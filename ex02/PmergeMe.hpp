@@ -6,7 +6,7 @@
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 11:44:58 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/10/20 11:46:28 by lgrisel          ###   ########.fr       */
+/*   Updated: 2025/11/12 11:37:07 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <algorithm>
-
-#define	OK "OK"
-#define KO "KO"
 
 class PmergeMe
 {

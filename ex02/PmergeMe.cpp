@@ -6,7 +6,7 @@
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 11:52:39 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/10/20 11:52:40 by lgrisel          ###   ########.fr       */
+/*   Updated: 2025/11/12 11:37:00 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,8 +132,8 @@ void PmergeMe::sortAndMesure()
 
 	printContainer(vecCopy, "After: ");
 
-	std::cout << "Vector sort " << (isSorted(vecCopy) ? OK : KO) << std::endl;
-	std::cout << "Deque sort " << (isSorted(deqCopy) ? OK : KO) << std::endl;
+	std::cout << "Vector sort " << (isSorted(vecCopy) ? "OK" : "KO") << std::endl;
+	std::cout << "Deque sort " << (isSorted(deqCopy) ? "OK" : "KO") << std::endl;
 
 	double durationVec = static_cast<double>(end1 - start1) / CLOCKS_PER_SEC * 1e6;
 	double durationDeq = static_cast<double>(end2 - start2) / CLOCKS_PER_SEC * 1e6;
