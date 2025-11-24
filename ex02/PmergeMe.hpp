@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 11:44:58 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/11/12 11:37:07 by lgrisel          ###   ########.fr       */
+/*   Created: 2025/10/20 11:46:04 by calleaum          #+#    #+#             */
+/*   Updated: 2025/11/24 11:45:55 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,13 @@
 
 class PmergeMe
 {
+	public:
+		PmergeMe();
+		~PmergeMe();
+
+		void	parseArgs(char **av, int ac);
+		void	sortAndMesure();
+
 	private:
 		std::vector<int>	_vec;
 		std::deque<int>		_deq;
@@ -36,11 +43,4 @@ class PmergeMe
 		void	printContainer(const T &container, const std::string &prefix);
 		std::vector<size_t>	generateJacobsthalSequence(size_t size) const;
 		std::deque<size_t>	generateJacobsthalSequenceDeque(size_t size);
-
-		public:
-		PmergeMe();
-		~PmergeMe();
-
-		void	parseArgs(char **av, int ac);
-		void	sortAndMesure();
 };

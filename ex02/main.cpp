@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 16:43:34 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/10/20 11:49:24 by lgrisel          ###   ########.fr       */
+/*   Created: 2025/10/20 11:45:55 by calleaum          #+#    #+#             */
+/*   Updated: 2025/11/24 11:44:08 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,15 @@ int	main(int ac, char **av)
 		std::cerr << "Usage: ./PmergeMe <sequence>" << std::endl;
 		return (EXIT_FAILURE);
 	}
-
 	try
 	{
 		PmergeMe	sorter;
 		sorter.parseArgs(av + 1, ac - 1);
 		sorter.sortAndMesure();
-	}
-	catch (const std::exception &e)
+	} catch (const std::exception &e)
 	{
 		std::cerr << "Error: " << e.what() << std::endl;
 		return (EXIT_FAILURE);
 	}
-
 	return (EXIT_SUCCESS);
 }
